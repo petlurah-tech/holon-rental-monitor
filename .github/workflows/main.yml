@@ -3,9 +3,9 @@ name: Holon Rental Monitor
 on:
   workflow_dispatch:
   schedule:
-      - cron: "*/15 * * * *"
+      - cron: "0 */3 * * *"
 
-jobs:
+jobs
  monitor:
   runs-on: ubuntu-latest
 
@@ -23,5 +23,10 @@ jobs:
    - name: Run monitor
      env:
        APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+       SMTP_HOST: ${{ secrets.SMTP_HOST }}
+       SMTP_PORT: ${{ secrets.SMTP_PORT }}
+       SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+       SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+       SMTP_FROM: ${{ secrets.SMTP_FROM }}
      run: |
         python main.py
