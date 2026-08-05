@@ -240,8 +240,9 @@ def main() -> int:
                     {"url": url}
                     for url in cfg.get("facebook_group_urls", [])
                 ],
-                "resultLimit": 50,
+                "resultLimit": 5,
                 "viewOption": "CHRONOLOGICAL",
+                "onlyPostsNewerThan":"4 hours"
             },
         )
         raw_listings.extend(normalize_items(items, "Facebook"))
