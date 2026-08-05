@@ -1,0 +1,27 @@
+{
+  "recipient_email": "Petlurav@yahoo.com",
+  "city": "חולון",
+  "preferred_neighborhood": "אגרובנק",
+  "rooms_min": 3.5,
+  "rooms_max": 4.5,
+  "price_min": 4000,
+  "price_max": 7100,
+  "allow_missing_price": true,
+  "parking_required": true,
+  "reject_street_or_nearby_parking": true,
+  "reject_explicit_no_mamad": true,
+  "allow_missing_mamad": true,
+  "balcony_preferred": true,
+  "move_in_min_days_after_publication": 21,
+  "facebook_group_urls": [
+    "https://www.facebook.com/share/g/19ME21G68g/?mibextid=wwXIfr",
+    "https://www.facebook.com/share/g/1CB9KGzYch/?mibextid=wwXIfr",
+    "https://www.facebook.com/share/g/1897Z6usaX/?mibextid=wwXIfr",
+    "https://www.facebook.com/share/g/1AvXqaEnCm/?mibextid=wwXIfr",
+    "https://www.facebook.com/share/g/1cPwhWbCmC/?mibextid=wwXIfr",
+    "https://www.facebook.com/share/g/1K47D4LPbV/?mibextid=wwXIfr",
+    "https://www.facebook.com/share/g/1BeynusFBH/?mibextid=wwXIfr",
+    "https://www.facebook.com/share/g/18y4B77dwT/?mibextid=wwXIfr"
+  ],
+  "yad2_search_url": ""
+}
