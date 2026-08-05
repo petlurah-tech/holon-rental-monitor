@@ -244,7 +244,7 @@ def main() -> int:
             fb_actor,
             {
                 "startUrls": [{"url": url} for url in group_urls],
-                "resultsLimit": 5,
+                "resultsLimit": 10,
                 "viewOption": "CHRONOLOGICAL",
                 "onlyPostsNewerThan": "4 hours",
             },
