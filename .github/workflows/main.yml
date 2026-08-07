@@ -33,7 +33,7 @@ jobs:
           SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           SMTP_FROM: ${{ secrets.SMTP_FROM }}
-        run: python main.py
+        run: python -u main.py
 
       - name: Save deduplication state
         run: |
