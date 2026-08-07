@@ -469,9 +469,21 @@ def main() -> int:
         if listing.stable_id in seen:
             continue
         ok, info = evaluate_listing(listing, city_cfg)
-        new_seen.add(listing.stable_id)
-        if ok:
-            matches.append((listing, info))
+
+if ok:
+print(
+f"[Filter][MATCH] city={listing.city_rule} "
+f"url={listing.url}"
+)
+matches.append((listing, info))
+else:
+print(
+f"[Filter][REJECTED] city={listing.city_rule} "
+f"reason={info.get('reason', 'unknown')} "
+f"url={listing.url}"
+)
+
+new_seen.add(listing.stable_id)
 
     save_json(SEEN_PATH, sorted(new_seen))
 
