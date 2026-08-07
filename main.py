@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent
 CONFIG_PATH = ROOT / "config.json"
 SEEN_PATH = ROOT / "seen.json"
 
-BRIGHTDATA_DATASET_ID = "gd_lz11167o2cb3r0lkj3"
+BRIGHTDATA_DATASET_ID = "gd_lz11l67o2cb3r0lkj3&notify"
 BRIGHTDATA_SCRAPE_URL = "https://api.brightdata.com/datasets/v3/scrape"
 
 AGROBANK_STREETS: dict[str, list[str]] = {
@@ -111,7 +111,7 @@ def run_brightdata_group(group_url: str, start_date: str, end_date: str, num_of_
 
     response = requests.post(
         BRIGHTDATA_SCRAPE_URL,
-        params={"dataset_id": BRIGHTDATA_DATASET_ID, "include_errors": "true"},
+        params={"dataset_id": BRIGHTDATA_DATASET_ID, "notify":"false","include_errors":"true"},
         headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
         json=payload,
         timeout=300,
