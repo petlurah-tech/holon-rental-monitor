@@ -6,7 +6,7 @@
     "רמת גן": {
       "rooms_min": 3,
       "rooms_max": 4.5,
-      "price_max": 7300,
+      "price_max": 7500,
       "allow_missing_price": true,
       "parking_required": true,
       "elevator_required": true,
@@ -21,7 +21,7 @@
     "חולון": {
       "rooms_min": 3.5,
       "rooms_max": 4.5,
-      "price_max": 7100,
+      "price_max": 7500,
       "allow_missing_price": true,
       "parking_required": true,
       "elevator_required": true,
