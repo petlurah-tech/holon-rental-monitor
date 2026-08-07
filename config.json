@@ -1,0 +1,51 @@
+{
+  "recipient_email": "petlurav@yahoo.com",
+  "lookback_hours": 4,
+  "max_posts_per_group": null,
+  "cities": {
+    "רמת גן": {
+      "rooms_min": 3.5,
+      "rooms_max": 4.5,
+      "price_max": 7500,
+      "allow_missing_price": true,
+      "parking_required": true,
+      "elevator_required": true,
+      "balcony_preferred": true,
+      "mamad_or_mamak_preferred": true,
+      "require_agrobank": false,
+      "yad2_balcony_required": false,
+      "facebook_group_urls": [
+        "https://www.facebook.com/groups/647901439404148/",
+        "https://www.facebook.com/groups/1870209196564360/"
+      ],
+      "yad2_search_urls": [
+        "https://www.yad2.co.il/realestate/rent/tel-aviv-area?maxPrice=7500&minRooms=3.5&maxRooms=4.5&minEntranceDate=1788998400&parking=1&elevator=1&area=3&city=8600"
+      ]
+    },
+    "חולון": {
+      "rooms_min": 3.5,
+      "rooms_max": 4.5,
+      "price_max": 7500,
+      "allow_missing_price": true,
+      "parking_required": true,
+      "elevator_required": true,
+      "balcony_preferred": true,
+      "mamad_or_mamak_preferred": true,
+      "require_agrobank": true,
+      "yad2_balcony_required": true,
+      "facebook_group_urls": [
+        "https://www.facebook.com/groups/1197208890661687/",
+        "https://www.facebook.com/groups/403009220176997/",
+        "https://www.facebook.com/groups/266774507954665/",
+        "https://www.facebook.com/groups/963153170558917/",
+        "https://www.facebook.com/groups/732333433544359/",
+        "https://www.facebook.com/groups/1354045801786047/",
+        "https://www.facebook.com/groups/192593757757738/",
+        "https://www.facebook.com/groups/801470026653021/"
+      ],
+      "yad2_search_urls": [
+        "https://www.yad2.co.il/realestate/rent/tel-aviv-area?maxPrice=7500&minRooms=3.5&maxRooms=4.5&minEntranceDate=1788998400&parking=1&elevator=1&balcony=1&area=11&city=6600&neighborhood=793"
+      ]
+    }
+  }
+}
