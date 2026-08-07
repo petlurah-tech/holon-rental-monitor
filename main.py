@@ -395,7 +395,7 @@ def evaluate_listing(listing: Listing, cfg: dict[str, Any]) -> tuple[bool, dict[
         return False, {"reason": "מודעת מכירה"}
 
     rooms = extract_rooms(text)
-    rmin = float(cfg.get("rooms_min", 3))
+    rmin = float(cfg.get("rooms_min", 3.5))
     rmax = float(cfg.get("rooms_max", 4.5))
     if rooms is None or not (rmin <= rooms <= rmax):
         return False, {"reason": f"חדרים לא בטווח {rmin}-{rmax}"}
