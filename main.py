@@ -127,7 +127,7 @@ def _snapshot_id_from_payload(data: Any) -> str | None:
     if isinstance(data, dict):
         for key in ("snapshot_id", "snapshot", "id"):
             value = data.get(key)
-            if isinstance(value, str) and value.startswith("s_"):
+            if isinstance(value, str) and (value.startswith("s_") or value.startswith("sd_")):
                 return value
 
         # Sometimes the useful payload is nested.
@@ -139,7 +139,7 @@ def _snapshot_id_from_payload(data: Any) -> str | None:
 
         # Last resort: extract an s_* token from the message/error text.
         combined = " ".join(str(data.get(k, "")) for k in ("error", "message", "details"))
-        match = re.search(r"\b(s_[A-Za-z0-9_-]+)\b", combined)
+        match = re.search(r"\b((?:s|sd)_[A-Za-z0-9_-]+)\b", combined)
         if match:
             return match.group(1)
 
