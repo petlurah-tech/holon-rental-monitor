@@ -1,7 +1,7 @@
 {
   "recipient_email": "petlurah@gmail.com",
   "lookback_hours": 4,
-  "max_posts_per_group": 10,
+  "max_posts_per_group": null,
   "cities": {
     "רמת גן": {
       "rooms_min": 3.5,
