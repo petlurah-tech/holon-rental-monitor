@@ -4,7 +4,7 @@
   "max_posts_per_group": 10,
   "cities": {
     "רמת גן": {
-      "rooms_min": 3,
+      "rooms_min": 3.5,
       "rooms_max": 4.5,
       "price_max": 7500,
       "allow_missing_price": true,
