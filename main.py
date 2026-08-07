@@ -146,7 +146,7 @@ def run_brightdata_group(group_url: str, start_date: str, end_date: str, num_of_
         except Exception:
             error_data = response.text
         raise RuntimeError(
-            f"Bright Data HTTP {response.status_code}: {error_data}"
+            f"Bright Data HTTP {response.status_code}: {error_data}")
     data = response.json()        
     if isinstance(data, dict):
         # Some API errors are returned as JSON objects even with HTTP 200.
