@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent
 CONFIG_PATH = ROOT / "config.json"
 SEEN_PATH = ROOT / "seen.json"
 
-BRIGHTDATA_DATASET_ID = "gd_lz11l67o2cb3r0lkj3&notify"
+BRIGHTDATA_DATASET_ID = "gd_lz11l67o2cb3r0lkj3"
 BRIGHTDATA_SCRAPE_URL = "https://api.brightdata.com/datasets/v3/scrape"
 
 AGROBANK_STREETS: dict[str, list[str]] = {
